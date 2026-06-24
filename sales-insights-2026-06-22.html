@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Insights - Week 22 Jun 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
+  .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; border: 0.5px solid #e0ded6; padding: 2rem 2.5rem; }
+  .report-title { font-size: 22px; font-weight: 500; margin-bottom: 4px; }
+  .report-meta { font-size: 13px; color: #888780; margin-bottom: 2rem; }
+  .divider { border: none; border-top: 0.5px solid #e0ded6; margin: 1.75rem 0; }
+  .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #b4b2a9; margin-bottom: 12px; }
+  .insight-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
+  .insight-item:last-child { border-bottom: none; }
+  .badge { font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
+  .badge-competitor { background: #FAECE7; color: #993C1D; }
+  .badge-objection { background: #FCEBEB; color: #A32D2D; }
+  .badge-usecase { background: #E1F5EE; color: #0F6E56; }
+  .badge-doubt { background: #E6F1FB; color: #185FA5; }
+  .badge-other { background: #F1EFE8; color: #5F5E5A; }
+  .insight-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+  .opp-item { display: flex; gap: 10px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
+  .opp-item:last-child { border-bottom: none; }
+  .opp-dot { width: 6px; height: 6px; border-radius: 50%; background: #7F77DD; flex-shrink: 0; margin-top: 7px; }
+  .opp-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="report-title">Sales Insights</p>
+  <p class="report-meta">Week of 22 Jun 2026 · 7 calls reviewed</p>
+
+  <p class="section-label">Insights</p>
+
+  <div class="insight-item">
+    <span class="badge badge-competitor">Competitor</span>
+    <span class="insight-text">Salesforce is the most cited alternative, mentioned by two prospects (Creditel and Proa) for email/WhatsApp automation and as a general messaging platform with unpredictable pricing.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Pricing expectation mismatch: prospects expect significant discounts when negotiating lower MAU tiers, but OneSignal's pricing doesn't scale down proportionally below 25K MAUs.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Budget approval through committee or CEO-level sign-off is adding deal cycle length. At least two prospects need directorship buy-in before committing, with no pre-assigned budget.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-usecase">Use Case</span>
+    <span class="insight-text">Abandoned cart / incomplete loan application recovery is the most common use case across financial services leads (Creditel, Proa), replacing manual follow-up processes taking 24h+.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-usecase">Use Case</span>
+    <span class="insight-text">Habit creation and re-engagement (not e-commerce conversion) emerged as the primary use case for a fitness app prospect (MudeFit), requiring a different demo script framing.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-doubt">Doubt</span>
+    <span class="insight-text">WhatsApp integration complexity is a repeated blocker. Prospects assume OneSignal is a direct Meta Business Partner and are confused by the Webhook approach.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-other">Other</span>
+    <span class="insight-text">A Mixpanel discovery call (AtlasGov) showed strong PLG demand from B2B SaaS companies transitioning from Sales-Led to Product-Led Growth, with HubSpot as primary downstream integration.</span>
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Opportunities & Learnings</p>
+
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">The WhatsApp objection needs a standardized response. A one-slide explainer on "how WhatsApp works in OneSignal today vs. what's coming" would reduce friction and manage expectations proactively.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">For financial services demos, prepare a fintech-specific template in advance (loan application events, credit eligibility tags). The current generic demo resonates but takes too long to contextualize.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Pricing conversations benefit from early transparency. When MAU tiers go down, proactively explain that pricing doesn't change materially below 25K MAUs — before the prospect discovers it at proposal review.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">For deals going to committee approval, qualify the economic buyer and pre-assigned budget in the discovery call. This saves time and helps frame urgency around the October free plan deadline.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Build a dedicated "non-transactional engagement" talk track for apps like fitness, media, and education. MudeFit showed this adaptation can work well — it just needs to be faster and more consistent.</span>
+  </div>
+</div>
+</body>
+</html>
