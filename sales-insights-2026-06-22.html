@@ -30,42 +30,42 @@
 <body>
 <div class="container">
   <p class="report-title">Sales Insights</p>
-  <p class="report-meta">Week of June 22, 2026 · 5 calls reviewed</p>
+  <p class="report-meta">Week of June 22, 2026 · 6 calls reviewed</p>
   <p class="section-label">Insights</p>
 
   <div class="insight-item">
-    <span class="badge badge-objection">Objection</span>
-    <span class="insight-text">Pricing shock on upgrade: leads coming from the free plan consistently express sticker shock when transitioning to a paid tier. One prospect noted going from $20/month to $600/month felt like a big jump, even after understanding the value — this is a recurring friction point across Brazilian accounts.</span>
+    <span class="badge badge-competitor">Competitor</span>
+    <span class="insight-text">Creditel is evaluating Salesforce as an alternative to OneSignal for messaging.</span>
   </div>
 
   <div class="insight-item">
     <span class="badge badge-competitor">Competitor</span>
-    <span class="insight-text">Salesforce is the main incumbent for multi-channel automation in LATAM enterprise accounts — one financial services lead had all WhatsApp automations running inside Salesforce and cited unpredictable per-feature billing as their main pain point, which is a strong opening for OneSignal's pricing model.</span>
+    <span class="insight-text">Aurea (Trigo Dourado) relies on a third-party WhatsApp provider and is exploring Databricks + WhatsApp + OneSignal architecture.</span>
+  </div>
+
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Proa expected a bigger price drop when reducing MAUs from 10K to 5K — sticker shock going from $20 to $591/month.</span>
+  </div>
+
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Creditel has a development freeze in production, delaying implementation timeline and creating urgency pressure.</span>
   </div>
 
   <div class="insight-item">
     <span class="badge badge-usecase">Use Case</span>
-    <span class="insight-text">Abandoned flow automation (financial products) is the primary use case driving urgency at fintech leads — specifically triggering a recovery journey when a loan or credit card application is started but not completed, with entry/exit rules based on custom events.</span>
+    <span class="insight-text">Abandoned cart automation is the #1 use case across financial leads (Creditel), with current manual follow-up taking 24h+.</span>
   </div>
 
   <div class="insight-item">
     <span class="badge badge-usecase">Use Case</span>
-    <span class="insight-text">EdTech course progression automation: leads in the education vertical want to trigger journeys based on course completion percentage (e.g., at 70%) and re-engagement flows for students inactive for 7+ days, using timestamp tags and the new custom events feature.</span>
+    <span class="insight-text">AtlasGov (B2B SaaS) wants Mixpanel for PLG metrics: activation, time-to-value, health score, and upsell signals — launching self-serve July 3.</span>
   </div>
 
   <div class="insight-item">
     <span class="badge badge-doubt">Doubt</span>
-    <span class="insight-text">Multiple leads were unsure how MAUs are counted — one assumed it referred only to subscribed/opted-in users, not all users who open the app in 30 days. This confusion affects how they evaluate their plan size and whether they're over- or under-provisioned.</span>
-  </div>
-
-  <div class="insight-item">
-    <span class="badge badge-doubt">Doubt</span>
-    <span class="insight-text">WhatsApp integration complexity is a blocker for at least two deals: leads want native WhatsApp support but don't understand the Twilio/webhook indirect path. One prospect is actively evaluating third-party WhatsApp providers (Meta direct, Witi, etc.) to pair with OneSignal via webhook.</span>
-  </div>
-
-  <div class="insight-item">
-    <span class="badge badge-other">Other</span>
-    <span class="insight-text">The OneSignal free plan sunset (Oct 1 for existing accounts, Aug 1 for new) is creating genuine urgency in the pipeline — multiple accounts are being pushed to evaluate paid plans for the first time. This is driving pipeline but also some churn risk for accounts that don't see enough value to upgrade.</span>
+    <span class="insight-text">Multiple leads confused MAU definition — clients assume it counts only users they communicate with, not all who open the app.</span>
   </div>
 
   <hr class="divider">
@@ -73,27 +73,27 @@
 
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">WhatsApp needs a cleaner answer in the deck. Multiple calls stalled or generated confusion around WhatsApp — leads expect a native integration and the webhook-via-Twilio explanation isn't landing cleanly. Having a simple one-slide explainer with the two valid paths (Twilio, direct Meta API, or third-party via webhook) would reduce friction significantly.</span>
+    <span class="opp-text">The MAU definition should be proactively explained in every pricing conversation — it's a recurring source of confusion and sticker shock.</span>
   </div>
 
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Custom Events are underutilized in demos and not being shown proactively — but when demonstrated, they consistently generate excitement and open up new journey architectures leads hadn't considered. This feature should be a standard part of the demo flow, not an add-on shown only when time allows.</span>
+    <span class="opp-text">When a lead has budget resistance, anchoring to the cost of inaction (manual ops, missed conversions) is more effective than discounting.</span>
   </div>
 
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Pricing anchoring could be stronger. When leads express sticker shock, the response tends to jump to discounts rather than first anchoring on the value unlocked (email volume, unlimited pushes, 20 journeys vs. 3, etc.). Walking through what each feature saves in time and cost before presenting the number would help justify the jump from free/low tiers.</span>
+    <span class="opp-text">WhatsApp is a blocker in multiple deals — having a clear, repeatable answer on the webhook/Twilio/native roadmap would reduce friction.</span>
   </div>
 
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">The free plan sunset deadline is being used reactively (mentioning Oct 1 as a cutoff) but not proactively as a strategic reason to move now and lock in current pricing before August 1 changes. Framing it as "this is your window to get legacy pricing" before the price change kicks in could accelerate closes.</span>
+    <span class="opp-text">Calls with technical stakeholders (devs/PMs) move faster when custom events and SDK methods are shown early — it shifts the conversation from "can it?" to "how."</span>
   </div>
 
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Case studies with regional fintech and retail success metrics are highly effective when shared — the Tona Fintech example (activation improved from 14 to 3 days) generated visible engagement in a demo. Having 2–3 vertical-specific case studies ready to drop into any call would strengthen credibility and reduce deliberation time.</span>
+    <span class="opp-text">For free-plan upgrades, framing the Oct 1 deadline as a hard cutoff (not a limit) earlier in the cycle creates urgency without feeling like pressure.</span>
   </div>
 
 </div>
