@@ -20,80 +20,91 @@
   .badge-usecase { background: #E1F5EE; color: #0F6E56; }
   .badge-doubt { background: #E6F1FB; color: #185FA5; }
   .badge-other { background: #F1EFE8; color: #5F5E5A; }
+  .badge-gap { background: #FAEEDA; color: #854F0B; }
   .insight-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
   .opp-item { display: flex; gap: 10px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
   .opp-item:last-child { border-bottom: none; }
   .opp-dot { width: 6px; height: 6px; border-radius: 50%; background: #7F77DD; flex-shrink: 0; margin-top: 7px; }
+  .opp-dot-gap { width: 6px; height: 6px; border-radius: 50%; background: #EF9F27; flex-shrink: 0; margin-top: 7px; }
   .opp-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
 </style>
 </head>
 <body>
 <div class="container">
   <p class="report-title">Sales Insights</p>
-  <p class="report-meta">Week of June 22, 2026 · 6 calls reviewed</p>
+  <p class="report-meta">Week of June 22, 2026 · 5 calls reviewed</p>
+
   <p class="section-label">Insights</p>
 
   <div class="insight-item">
-    <span class="badge badge-competitor">Competitor</span>
-    <span class="insight-text">Creditel is evaluating Salesforce as an alternative to OneSignal for messaging.</span>
+    <span class="badge badge-usecase">Use Case</span>
+    <span class="insight-text">Transactional push (card swipe notifications) is the primary driver for fintech/benefits leads upgrading from free plans.</span>
   </div>
-
-  <div class="insight-item">
-    <span class="badge badge-competitor">Competitor</span>
-    <span class="insight-text">Aurea (Trigo Dourado) relies on a third-party WhatsApp provider and is exploring Databricks + WhatsApp + OneSignal architecture.</span>
-  </div>
-
-  <div class="insight-item">
-    <span class="badge badge-objection">Objection</span>
-    <span class="insight-text">Proa expected a bigger price drop when reducing MAUs from 10K to 5K — sticker shock going from $20 to $591/month.</span>
-  </div>
-
-  <div class="insight-item">
-    <span class="badge badge-objection">Objection</span>
-    <span class="insight-text">Creditel has a development freeze in production, delaying implementation timeline and creating urgency pressure.</span>
-  </div>
-
   <div class="insight-item">
     <span class="badge badge-usecase">Use Case</span>
-    <span class="insight-text">Abandoned cart automation is the #1 use case across financial leads (Creditel), with current manual follow-up taking 24h+.</span>
+    <span class="insight-text">Abandoned cart / incomplete loan application journeys are the #1 automation use case for LATAM fintech prospects.</span>
   </div>
-
   <div class="insight-item">
-    <span class="badge badge-usecase">Use Case</span>
-    <span class="insight-text">AtlasGov (B2B SaaS) wants Mixpanel for PLG metrics: activation, time-to-value, health score, and upsell signals — launching self-serve July 3.</span>
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Price shock when leads see the self-serve site and compare to the negotiated annual contract price — the gap feels too large.</span>
   </div>
-
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Internal budget approval process (comité, directores) creates delays and uncertainty in closing — common in structured companies.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-competitor">Competitor</span>
+    <span class="insight-text">Salesforce Marketing Cloud is entrenched in some accounts (Proa) — unpredictable add-on costs are the main pain vs. OneSignal.</span>
+  </div>
   <div class="insight-item">
     <span class="badge badge-doubt">Doubt</span>
-    <span class="insight-text">Multiple leads confused MAU definition — clients assume it counts only users they communicate with, not all who open the app.</span>
+    <span class="insight-text">MAU billing model is frequently misunderstood — leads confuse "monthly active users" with total registered users or first-time users.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-other">Other</span>
+    <span class="insight-text">WhatsApp blocking issues (Meta BM bans, no direct Meta partnership via Twilio) are a recurring deal blocker for BR prospects.</span>
   </div>
 
   <hr class="divider">
+
   <p class="section-label">Opportunities & Learnings</p>
 
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">The MAU definition should be proactively explained in every pricing conversation — it's a recurring source of confusion and sticker shock.</span>
+    <span class="opp-text">When showing the self-serve pricing page, proactively frame the contract discount before the lead does the math themselves — it lands better when you control the narrative.</span>
   </div>
-
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">When a lead has budget resistance, anchoring to the cost of inaction (manual ops, missed conversions) is more effective than discounting.</span>
+    <span class="opp-text">Leads on free plans often don't know which features they're missing. An early "free plan audit" in the discovery can generate urgency and appreciation for the upgrade value.</span>
   </div>
-
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">WhatsApp is a blocker in multiple deals — having a clear, repeatable answer on the webhook/Twilio/native roadmap would reduce friction.</span>
+    <span class="opp-text">For deals going to committee approval, send a one-pager with ROI framing (not just feature lists) to help the internal champion sell it upward.</span>
   </div>
-
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Calls with technical stakeholders (devs/PMs) move faster when custom events and SDK methods are shown early — it shifts the conversation from "can it?" to "how."</span>
+    <span class="opp-text">The Bildung services pitch should come earlier in the demo — not just at pricing time. Position it as part of the value from the start to reduce sticker shock at close.</span>
   </div>
 
+  <hr class="divider">
+
+  <p class="section-label">Product Gaps</p>
+
   <div class="opp-item">
-    <div class="opp-dot"></div>
-    <span class="opp-text">For free-plan upgrades, framing the Oct 1 deadline as a hard cutoff (not a limit) earlier in the cycle creates urgency without feeling like pressure.</span>
+    <div class="opp-dot-gap"></div>
+    <span class="opp-text">No native Meta Business Partner relationship — WhatsApp via Twilio is a recurring friction point and deal risk, especially for BR accounts.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot-gap"></div>
+    <span class="opp-text">Tags are not labeled as "custom fields" in the UI — leads with CRM backgrounds find the mental model confusing and expect field-level semantics.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot-gap"></div>
+    <span class="opp-text">No Growth plan for accounts under $25K MAU threshold on Pro — pricing gap leaves a dead zone between Growth and Pro for small but high-volume accounts.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot-gap"></div>
+    <span class="opp-text">Free plan deprecation timeline (Oct 1) creates urgency but also anxiety — no self-serve migration path or grace-period tools for existing free accounts.</span>
   </div>
 
 </div>
