@@ -33,54 +33,54 @@
 <body>
 <div class="container">
   <p class="report-title">Sales Insights</p>
-  <p class="report-meta">Week of June 22, 2026 · 7 calls reviewed</p>
+  <p class="report-meta">Week of June 22, 2026 · 6 calls reviewed</p>
 
   <p class="section-label">Insights</p>
 
   <div class="insight-item">
-    <span class="badge badge-competitor">Competitor</span>
-    <span class="insight-text">Proa runs email + WhatsApp automations in Salesforce; unpredictable add-on billing is their main pain point.</span>
-  </div>
-  <div class="insight-item">
     <span class="badge badge-usecase">Use Case</span>
-    <span class="insight-text">Raiô (50k MAUs, fintech benefits) uses OneSignal solely for transactional push on card swipes; open to retention journeys.</span>
+    <span class="insight-text">Transactional push (card payment alerts) is the primary use case for fintech clients</span>
   </div>
   <div class="insight-item">
     <span class="badge badge-objection">Objection</span>
-    <span class="insight-text">Proa: price jump from Growth to Pro ($20 → $591/mo) felt too steep even after significant discounts were applied.</span>
+    <span class="insight-text">Sticker shock jumping from free to paid (~$600/mo); clients need ROI framing to close</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-competitor">Competitor</span>
+    <span class="insight-text">Salesforce dominates marketing stack for mid-market; unpredictable billing is their main pain</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-usecase">Use Case</span>
+    <span class="insight-text">Abandoned-cart/loan journeys are the top automation priority for financial services prospects</span>
   </div>
   <div class="insight-item">
     <span class="badge badge-doubt">Doubt</span>
-    <span class="insight-text">Multiple leads misunderstood MAU definition — assumed it counted all registered users, not just monthly active openers.</span>
-  </div>
-  <div class="insight-item">
-    <span class="badge badge-other">Other</span>
-    <span class="insight-text">Creditel has a production freeze (no deployments) but is committee-ready to buy; implementation may slip post-signature.</span>
+    <span class="insight-text">Clients consistently misunderstand MAU definition — conflating it with opted-in or messaged users</span>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">Opportunities & Learnings</p>
+  <p class="section-label">Opportunities &amp; Learnings</p>
 
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Show the website vs. contract price gap proactively — letting leads discover it themselves mid-call creates confusion and friction.</span>
+    <span class="opp-text">Explain the free-to-paid price jump early in discovery to prevent late-stage sticker shock</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Define MAUs explicitly at the top of every call — the misunderstanding came up in 3 different calls this week.</span>
+    <span class="opp-text">Ask about existing WhatsApp/SMS setup upfront — webhook value depends on providers already in use</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Introduce the Events feature during discovery, not just late-stage demos — one lead rethought their entire integration after seeing it.</span>
+    <span class="opp-text">Lead with Events feature in demos — tag-only clients miss high-value automation patterns</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Use Salesforce's unpredictable billing as a contrast anchor whenever it appears in the lead's current stack.</span>
+    <span class="opp-text">Qualify internal approval timelines before presenting pricing to avoid deals stalling late</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Free plan deprecation is driving inbound from stagnant accounts — lean on this urgency actively in outreach and openers.</span>
+    <span class="opp-text">Use Health Score and PLG metrics framing when prospects are in SLG-to-PLG transitions</span>
   </div>
 
   <hr class="divider">
@@ -89,11 +89,15 @@
 
   <div class="opp-item">
     <div class="gap-dot"></div>
-    <span class="opp-text">No native segment filter for push opt-in status — must be sent as a custom tag from the SDK to be usable in journeys.</span>
+    <span class="opp-text">No native dashboard filter to distinguish opted-in from opted-out users</span>
   </div>
   <div class="opp-item">
     <div class="gap-dot"></div>
-    <span class="opp-text">No native WhatsApp channel — requires Twilio webhook + separate Meta billing, which creates pricing confusion with leads.</span>
+    <span class="opp-text">WhatsApp is not a native channel — requires webhook workaround to third-party providers</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">No cross-team send visibility — teams can send overlapping messages with no unified user send log</span>
   </div>
 
 </div>
