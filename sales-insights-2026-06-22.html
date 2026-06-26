@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sales Insights - Week June 22, 2026</title>
+<meta name="description" content="Weekly sales insights report for Bildung Data — week of June 22, 2026.">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
@@ -25,44 +26,36 @@
   .opp-item { display: flex; gap: 10px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
   .opp-item:last-child { border-bottom: none; }
   .opp-dot { width: 6px; height: 6px; border-radius: 50%; background: #7F77DD; flex-shrink: 0; margin-top: 7px; }
-  .opp-dot-gap { width: 6px; height: 6px; border-radius: 50%; background: #EF9F27; flex-shrink: 0; margin-top: 7px; }
+  .gap-dot { width: 6px; height: 6px; border-radius: 50%; background: #EF9F27; flex-shrink: 0; margin-top: 7px; }
   .opp-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
 </style>
 </head>
 <body>
 <div class="container">
   <p class="report-title">Sales Insights</p>
-  <p class="report-meta">Week of June 22, 2026 · 5 calls reviewed</p>
+  <p class="report-meta">Week of June 22, 2026 · 7 calls reviewed</p>
 
   <p class="section-label">Insights</p>
 
   <div class="insight-item">
-    <span class="badge badge-usecase">Use Case</span>
-    <span class="insight-text">Transactional push (card swipe notifications) is the primary driver for fintech/benefits leads upgrading from free plans.</span>
-  </div>
-  <div class="insight-item">
-    <span class="badge badge-usecase">Use Case</span>
-    <span class="insight-text">Abandoned cart / incomplete loan application journeys are the #1 automation use case for LATAM fintech prospects.</span>
-  </div>
-  <div class="insight-item">
-    <span class="badge badge-objection">Objection</span>
-    <span class="insight-text">Price shock when leads see the self-serve site and compare to the negotiated annual contract price — the gap feels too large.</span>
-  </div>
-  <div class="insight-item">
-    <span class="badge badge-objection">Objection</span>
-    <span class="insight-text">Internal budget approval process (comité, directores) creates delays and uncertainty in closing — common in structured companies.</span>
-  </div>
-  <div class="insight-item">
     <span class="badge badge-competitor">Competitor</span>
-    <span class="insight-text">Salesforce Marketing Cloud is entrenched in some accounts (Proa) — unpredictable add-on costs are the main pain vs. OneSignal.</span>
+    <span class="insight-text">Proa runs email + WhatsApp automations in Salesforce; unpredictable add-on billing is their main pain point.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-usecase">Use Case</span>
+    <span class="insight-text">Raiô (50k MAUs, fintech benefits) uses OneSignal solely for transactional push on card swipes; open to retention journeys.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Proa: price jump from Growth to Pro ($20 → $591/mo) felt too steep even after significant discounts were applied.</span>
   </div>
   <div class="insight-item">
     <span class="badge badge-doubt">Doubt</span>
-    <span class="insight-text">MAU billing model is frequently misunderstood — leads confuse "monthly active users" with total registered users or first-time users.</span>
+    <span class="insight-text">Multiple leads misunderstood MAU definition — assumed it counted all registered users, not just monthly active openers.</span>
   </div>
   <div class="insight-item">
     <span class="badge badge-other">Other</span>
-    <span class="insight-text">WhatsApp blocking issues (Meta BM bans, no direct Meta partnership via Twilio) are a recurring deal blocker for BR prospects.</span>
+    <span class="insight-text">Creditel has a production freeze (no deployments) but is committee-ready to buy; implementation may slip post-signature.</span>
   </div>
 
   <hr class="divider">
@@ -71,19 +64,23 @@
 
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">When showing the self-serve pricing page, proactively frame the contract discount before the lead does the math themselves — it lands better when you control the narrative.</span>
+    <span class="opp-text">Show the website vs. contract price gap proactively — letting leads discover it themselves mid-call creates confusion and friction.</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Leads on free plans often don't know which features they're missing. An early "free plan audit" in the discovery can generate urgency and appreciation for the upgrade value.</span>
+    <span class="opp-text">Define MAUs explicitly at the top of every call — the misunderstanding came up in 3 different calls this week.</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">For deals going to committee approval, send a one-pager with ROI framing (not just feature lists) to help the internal champion sell it upward.</span>
+    <span class="opp-text">Introduce the Events feature during discovery, not just late-stage demos — one lead rethought their entire integration after seeing it.</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">The Bildung services pitch should come earlier in the demo — not just at pricing time. Position it as part of the value from the start to reduce sticker shock at close.</span>
+    <span class="opp-text">Use Salesforce's unpredictable billing as a contrast anchor whenever it appears in the lead's current stack.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Free plan deprecation is driving inbound from stagnant accounts — lean on this urgency actively in outreach and openers.</span>
   </div>
 
   <hr class="divider">
@@ -91,20 +88,12 @@
   <p class="section-label">Product Gaps</p>
 
   <div class="opp-item">
-    <div class="opp-dot-gap"></div>
-    <span class="opp-text">No native Meta Business Partner relationship — WhatsApp via Twilio is a recurring friction point and deal risk, especially for BR accounts.</span>
+    <div class="gap-dot"></div>
+    <span class="opp-text">No native segment filter for push opt-in status — must be sent as a custom tag from the SDK to be usable in journeys.</span>
   </div>
   <div class="opp-item">
-    <div class="opp-dot-gap"></div>
-    <span class="opp-text">Tags are not labeled as "custom fields" in the UI — leads with CRM backgrounds find the mental model confusing and expect field-level semantics.</span>
-  </div>
-  <div class="opp-item">
-    <div class="opp-dot-gap"></div>
-    <span class="opp-text">No Growth plan for accounts under $25K MAU threshold on Pro — pricing gap leaves a dead zone between Growth and Pro for small but high-volume accounts.</span>
-  </div>
-  <div class="opp-item">
-    <div class="opp-dot-gap"></div>
-    <span class="opp-text">Free plan deprecation timeline (Oct 1) creates urgency but also anxiety — no self-serve migration path or grace-period tools for existing free accounts.</span>
+    <div class="gap-dot"></div>
+    <span class="opp-text">No native WhatsApp channel — requires Twilio webhook + separate Meta billing, which creates pricing confusion with leads.</span>
   </div>
 
 </div>
