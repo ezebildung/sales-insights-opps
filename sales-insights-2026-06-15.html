@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Insights - Week June 15, 2026</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
+.container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; border: 0.5px solid #e0ded6; padding: 2rem 2.5rem; }
+.report-title { font-size: 22px; font-weight: 500; margin-bottom: 4px; }
+.report-meta { font-size: 13px; color: #888780; margin-bottom: 2rem; }
+.divider { border: none; border-top: 0.5px solid #e0ded6; margin: 1.75rem 0; }
+.section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #b4b2a9; margin-bottom: 12px; }
+.insight-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
+.insight-item:last-child { border-bottom: none; }
+.badge { font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
+.badge-competitor { background: #FAECE7; color: #993C1D; }
+.badge-objection { background: #FCEBEB; color: #A32D2D; }
+.badge-usecase { background: #E1F5EE; color: #0F6E56; }
+.badge-doubt { background: #E6F1FB; color: #185FA5; }
+.badge-other { background: #F1EFE8; color: #5F5E5A; }
+.badge-gap { background: #FAEEDA; color: #854F0B; }
+.insight-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+.opp-item { display: flex; gap: 10px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
+.opp-item:last-child { border-bottom: none; }
+.opp-dot { width: 6px; height: 6px; border-radius: 50%; background: #7F77DD; flex-shrink: 0; margin-top: 7px; }
+.gap-dot { width: 6px; height: 6px; border-radius: 50%; background: #EF9F27; flex-shrink: 0; margin-top: 7px; }
+.opp-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="report-title">Sales Insights</p>
+  <p class="report-meta">Week of June 15, 2026 &middot; 6 calls reviewed</p>
+  <p class="section-label">Insights</p>
+  <div class="insight-item">
+    <span class="badge badge-competitor">Competitor</span>
+    <span class="insight-text">Infobip named as direct alternative in two BR fintech calls; one lead actively evaluating both.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-usecase">Use Case</span>
+    <span class="insight-text">Omnichannel debt collection (push, email, SMS escalation) is a primary driver for fintech leads.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-usecase">Use Case</span>
+    <span class="insight-text">Habit creation for D1–D7 users is the core retention goal across fitness and short-video apps.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-doubt">Doubt</span>
+    <span class="insight-text">MAU definition recurs across calls — leads assume it counts messaged users, not app openers.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Growth→Pro plan gap is too wide; leads hitting 3-journey limit don't see a natural intermediate step.</span>
+  </div>
+  <hr class="divider">
+  <p class="section-label">Opportunities &amp; Learnings</p>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">WhatsApp is a blocker in BR market — team needs a sharper, ready answer on the Twilio path and limitations before it comes up.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">MAU definition should be proactively explained before pricing, not reactively after confusion arises.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Event Streams (data export) addresses a recurring analytics objection — it should be part of the standard pitch, not an afterthought.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Infobip comparisons come up without a prepared counternarrative; a direct differentiation talking point would help close faster.</span>
+  </div>
+  <hr class="divider">
+  <p class="section-label">Product Gaps</p>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">No native WhatsApp channel; Twilio dependency adds friction and cost, especially for BR/LATAM market.</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">No aggregated journey-level conversion reporting; leads expect a single funnel view, not per-message metrics.</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">Tags behave as key-value pairs, not structured custom fields; confusing for leads coming from Salesforce or HubSpot.</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">Only one identity resolution method (Login); no alias support limits anonymous-to-known user tracking flexibility.</span>
+  </div>
+</div>
+</body>
+</html>
