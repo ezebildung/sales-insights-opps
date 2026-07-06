@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Insights - Week 2026-07-06</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
+  .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; border: 0.5px solid #e0ded6; padding: 2rem 2.5rem; }
+  .report-title { font-size: 22px; font-weight: 500; margin-bottom: 4px; }
+  .report-meta { font-size: 13px; color: #888780; margin-bottom: 2rem; }
+  .divider { border: none; border-top: 0.5px solid #e0ded6; margin: 1.75rem 0; }
+  .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #b4b2a9; margin-bottom: 12px; }
+  .insight-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
+  .insight-item:last-child { border-bottom: none; }
+  .badge { font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
+  .badge-competitor { background: #FAECE7; color: #993C1D; }
+  .badge-objection { background: #FCEBEB; color: #A32D2D; }
+  .badge-usecase { background: #E1F5EE; color: #0F6E56; }
+  .badge-doubt { background: #E6F1FB; color: #185FA5; }
+  .badge-other { background: #F1EFE8; color: #5F5E5A; }
+  .badge-gap { background: #FAEEDA; color: #854F0B; }
+  .insight-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+  .opp-item { display: flex; gap: 10px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
+  .opp-item:last-child { border-bottom: none; }
+  .opp-dot { width: 6px; height: 6px; border-radius: 50%; background: #7F77DD; flex-shrink: 0; margin-top: 7px; }
+  .gap-dot { width: 6px; height: 6px; border-radius: 50%; background: #EF9F27; flex-shrink: 0; margin-top: 7px; }
+  .opp-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="report-title">Sales Insights</p>
+  <p class="report-meta">Week of July 6, 2026 · 16 calls reviewed</p>
+
+  <p class="section-label">Insights</p>
+  <div class="insight-item">
+    <span class="badge badge-competitor">Competitor</span>
+    <span class="insight-text">Aldea's parent company switched a sibling brand to Firebase after CEO-level pushback.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">SalaryFits/Experian needs strong ROI proof to justify going from $0 to ~$2,000/month.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-doubt">Doubt</span>
+    <span class="insight-text">SalaryFits fears OneSignal might double-count MAUs for users sharing one CPF across devices.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-usecase">Use Case</span>
+    <span class="insight-text">FirstBank wants RCS to migrate mortgage customers from branch payments to a digital portal.</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-other">Other</span>
+    <span class="insight-text">Federada's OneSignal usage (~90k MAU) is already 90x over the new 1,000 free-tier cap.</span>
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Opportunities & Learnings</p>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Pricing is rarely quoted live, forcing a second touch by email instead of closing momentum.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Calls often reach a technical contact instead of the actual budget-approving decision-maker.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">A parent company's reaction to the pricing change can spread to sibling accounts.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Reps pitch full platform breadth before confirming the lead's specific KPI, diluting focus.</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Accounts going quiet after a stalled POC aren't proactively followed up before they self-solve.</span>
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Product Gaps</p>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">No native WhatsApp channel — only usable via webhook integration to the Meta API.</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">Can't infer demographic attributes like gender — only tracks behavior or explicit data.</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">No lightweight way to schedule one-off dated campaign batches without building a full Journey.</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">Can't scope segment access to sub-accounts (e.g. per distributor or per corporate client).</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">No built-in funnel/drop-off analytics — flow completion tracking requires an external tool.</span>
+  </div>
+</div>
+</body>
+</html>
