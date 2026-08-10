@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Insights - Week August 10, 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
+  .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; border: 0.5px solid #e0ded6; padding: 2rem 2.5rem; }
+  .report-title { font-size: 22px; font-weight: 500; margin-bottom: 4px; }
+  .report-meta { font-size: 13px; color: #888780; margin-bottom: 2rem; }
+  .divider { border: none; border-top: 0.5px solid #e0ded6; margin: 1.75rem 0; }
+  .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #b4b2a9; margin-bottom: 12px; }
+  .insight-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
+  .insight-item:last-child { border-bottom: none; }
+  .badge { font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
+  .badge-competitor { background: #FAECE7; color: #993C1D; }
+  .badge-objection { background: #FCEBEB; color: #A32D2D; }
+  .badge-usecase { background: #E1F5EE; color: #0F6E56; }
+  .badge-doubt { background: #E6F1FB; color: #185FA5; }
+  .badge-other { background: #F1EFE8; color: #5F5E5A; }
+  .badge-gap { background: #FAEEDA; color: #854F0B; }
+  .insight-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+  .opp-item { display: flex; gap: 10px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
+  .opp-item:last-child { border-bottom: none; }
+  .opp-dot { width: 6px; height: 6px; border-radius: 50%; background: #7F77DD; flex-shrink: 0; margin-top: 7px; }
+  .gap-dot { width: 6px; height: 6px; border-radius: 50%; background: #EF9F27; flex-shrink: 0; margin-top: 7px; }
+  .opp-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="report-title">Sales Insights</p>
+  <p class="report-meta">Week of August 10, 2026 · 5 calls reviewed</p>
+
+  <p class="section-label">Insights</p>
+  <div class="insight-item">
+    <span class="badge badge-competitor">Competitor</span>
+    <span class="insight-text">Claro Sports weighed building push in-house on AWS/GCP or outsourcing to "Tabula" instead</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Claro Sports called the jump from a $0/mo legacy plan to $96K-$132K/yr unworkable without phasing</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Prax resisted prepaying ~$17K/yr for Mixpanel before validating attach rate with their own customers</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-usecase">Use Case</span>
+    <span class="insight-text">Bancamía wants push-only OTP/security alerts for mobile banking, with no SMS/email fallback</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-doubt">Doubt</span>
+    <span class="insight-text">Bancamía requested a regulated-bank reference for OTP use; only a crypto-wallet reference exists</span>
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Opportunities & Learnings</p>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Pricing calls often end without a clear counter-anchor, leaving the negotiation open-ended</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Feature-usage needs surface after a high quote is presented, instead of shaping it upfront</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Regulated-industry reference requests are handled reactively instead of pre-arranged in advance</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Deep compliance questions (DRP, rollback, data residency) catch reps without ready answers</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Checking a prospect's billing/usage visibility beforehand could sharpen the value pitch</span>
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Product Gaps</p>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">No documented Disaster Recovery Plan / multi-region failover story for OTP-critical customers</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">No documented rollback process for individual API-triggered sends like OTP, unlike bulk campaigns</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">Org-level Admin role is separate from app-level Admin, hiding billing/usage from app-level admins</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">No UI-level way to audit which data tags exist or how/why they were set</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">No PII/data-classification matrix deliverable available for compliance-driven enterprise buyers</span>
+  </div>
+</div>
+</body>
+</html>
