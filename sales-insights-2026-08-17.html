@@ -32,28 +32,28 @@
 <body>
 <div class="container">
   <p class="report-title">Sales Insights</p>
-  <p class="report-meta">Week of August 17, 2026 · 4 calls reviewed</p>
+  <p class="report-meta">Week of August 17, 2026 · 5 calls reviewed</p>
 
   <p class="section-label">Insights</p>
   <div class="insight-item">
     <span class="badge badge-competitor">Competitor</span>
-    <span class="insight-text">Kashin (fintech) is actively evaluating Customer.io alongside OneSignal; decision due next week</span>
-  </div>
-  <div class="insight-item">
-    <span class="badge badge-competitor">Competitor</span>
-    <span class="insight-text">Solemti's retail clients use Twilio for OTP SMS and InBlue for email; price is the key driver</span>
-  </div>
-  <div class="insight-item">
-    <span class="badge badge-doubt">Doubt</span>
-    <span class="insight-text">Kashin team confused about when to use tags vs. events, and why tag sets differ per user</span>
-  </div>
-  <div class="insight-item">
-    <span class="badge badge-usecase">Use Case</span>
-    <span class="insight-text">Vallo is building an internal notification/data hub to feed OneSignal via API for journeys</span>
+    <span class="insight-text">Twilio (SMS/OTP) and Brevo (email) are incumbent tools OneSignal is being evaluated against</span>
   </div>
   <div class="insight-item">
     <span class="badge badge-objection">Objection</span>
-    <span class="insight-text">Electrolux cited tight budget as the main reason it previously rejected FullStory</span>
+    <span class="insight-text">Enterprise vendor-homologation and Central Bank approval can take up to a year before go-live</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-usecase">Use Case</span>
+    <span class="insight-text">Fintech leads want journeys for loan reminders, KYC re-engagement, and tag-based segmentation</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-doubt">Doubt</span>
+    <span class="insight-text">Leads repeatedly confuse tags vs. events and are unsure which to use for segmentation</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-doubt">Doubt</span>
+    <span class="insight-text">Enterprise buyers ask about IP whitelisting and SSO (Azure Entra ID) before approving OneSignal</span>
   </div>
 
   <hr class="divider">
@@ -61,23 +61,23 @@
   <p class="section-label">Opportunities & Learnings</p>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Explain tags vs. events earlier in demos; it's a recurring source of client confusion</span>
+    <span class="opp-text">Compliance questions like SSO and IP whitelisting tend to surface late in enterprise conversations</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Free-plan migration talks risk pushing prospects to native integrations if value isn't shown fast</span>
+    <span class="opp-text">Pricing and usage numbers are often estimated live on calls instead of prepared beforehand</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">SMS/WhatsApp OTP cost questions come up often; a ready cost-comparison sheet would help</span>
+    <span class="opp-text">Tag vs. event terminology confuses leads repeatedly and needs a clearer standard explanation</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">API/integration-flow questions surface late; a standard diagram could speed technical calls</span>
+    <span class="opp-text">Demo environments sometimes hit account limits (e.g. segment caps) mid-demo, causing friction</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Multi-tool consolidation pitch lands well when budget/fragmentation is the main objection</span>
+    <span class="opp-text">Long generic product walkthroughs can delay addressing the client's specific questions</span>
   </div>
 
   <hr class="divider">
@@ -85,19 +85,19 @@
   <p class="section-label">Product Gaps</p>
   <div class="opp-item">
     <div class="gap-dot"></div>
-    <span class="opp-text">No native WhatsApp channel — requires webhooks to connect to Meta or a 3rd-party provider</span>
+    <span class="opp-text">No IP whitelisting or SSO (e.g. Azure Entra ID) support for account access; API-key auth only</span>
   </div>
   <div class="opp-item">
     <div class="gap-dot"></div>
-    <span class="opp-text">Event properties only support string/Unix timestamps — no native date/time data type</span>
+    <span class="opp-text">No native WhatsApp channel; requires webhooks and the Meta API</span>
   </div>
   <div class="opp-item">
     <div class="gap-dot"></div>
-    <span class="opp-text">One-off WhatsApp sends require creating then disabling a journey; no dedicated campaign type</span>
+    <span class="opp-text">No standalone WhatsApp send type; must create then disable a Journey for one-off sends</span>
   </div>
   <div class="opp-item">
     <div class="gap-dot"></div>
-    <span class="opp-text">Tag sets can end up inconsistent per user depending on import method (API, SDK, or CSV)</span>
+    <span class="opp-text">Date-type event properties require manual string-to-Unix-timestamp conversion for integration</span>
   </div>
 </div>
 </body>
