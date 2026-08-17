@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Insights - Week of August 17, 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
+  .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; border: 0.5px solid #e0ded6; padding: 2rem 2.5rem; }
+  .report-title { font-size: 22px; font-weight: 500; margin-bottom: 4px; }
+  .report-meta { font-size: 13px; color: #888780; margin-bottom: 2rem; }
+  .divider { border: none; border-top: 0.5px solid #e0ded6; margin: 1.75rem 0; }
+  .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #b4b2a9; margin-bottom: 12px; }
+  .insight-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
+  .insight-item:last-child { border-bottom: none; }
+  .badge { font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
+  .badge-competitor { background: #FAECE7; color: #993C1D; }
+  .badge-objection { background: #FCEBEB; color: #A32D2D; }
+  .badge-usecase { background: #E1F5EE; color: #0F6E56; }
+  .badge-doubt { background: #E6F1FB; color: #185FA5; }
+  .badge-other { background: #F1EFE8; color: #5F5E5A; }
+  .badge-gap { background: #FAEEDA; color: #854F0B; }
+  .insight-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+  .opp-item { display: flex; gap: 10px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
+  .opp-item:last-child { border-bottom: none; }
+  .opp-dot { width: 6px; height: 6px; border-radius: 50%; background: #7F77DD; flex-shrink: 0; margin-top: 7px; }
+  .gap-dot { width: 6px; height: 6px; border-radius: 50%; background: #EF9F27; flex-shrink: 0; margin-top: 7px; }
+  .opp-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="report-title">Sales Insights</p>
+  <p class="report-meta">Week of August 17, 2026 · 4 calls reviewed</p>
+
+  <p class="section-label">Insights</p>
+  <div class="insight-item">
+    <span class="badge badge-competitor">Competitor</span>
+    <span class="insight-text">Kashin (fintech) is actively evaluating Customer.io alongside OneSignal; decision due next week</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-competitor">Competitor</span>
+    <span class="insight-text">Solemti's retail clients use Twilio for OTP SMS and InBlue for email; price is the key driver</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-doubt">Doubt</span>
+    <span class="insight-text">Kashin team confused about when to use tags vs. events, and why tag sets differ per user</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-usecase">Use Case</span>
+    <span class="insight-text">Vallo is building an internal notification/data hub to feed OneSignal via API for journeys</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Electrolux cited tight budget as the main reason it previously rejected FullStory</span>
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Opportunities & Learnings</p>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Explain tags vs. events earlier in demos; it's a recurring source of client confusion</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Free-plan migration talks risk pushing prospects to native integrations if value isn't shown fast</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">SMS/WhatsApp OTP cost questions come up often; a ready cost-comparison sheet would help</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">API/integration-flow questions surface late; a standard diagram could speed technical calls</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Multi-tool consolidation pitch lands well when budget/fragmentation is the main objection</span>
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Product Gaps</p>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">No native WhatsApp channel — requires webhooks to connect to Meta or a 3rd-party provider</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">Event properties only support string/Unix timestamps — no native date/time data type</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">One-off WhatsApp sends require creating then disabling a journey; no dedicated campaign type</span>
+  </div>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">Tag sets can end up inconsistent per user depending on import method (API, SDK, or CSV)</span>
+  </div>
+</div>
+</body>
+</html>
