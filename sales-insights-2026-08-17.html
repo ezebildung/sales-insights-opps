@@ -27,33 +27,34 @@
   .opp-dot { width: 6px; height: 6px; border-radius: 50%; background: #7F77DD; flex-shrink: 0; margin-top: 7px; }
   .gap-dot { width: 6px; height: 6px; border-radius: 50%; background: #EF9F27; flex-shrink: 0; margin-top: 7px; }
   .opp-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+  .gap-account { color: #b4b2a9; font-size: 13px; }
 </style>
 </head>
 <body>
 <div class="container">
   <p class="report-title">Sales Insights</p>
-  <p class="report-meta">Week of August 17, 2026 · 5 calls reviewed</p>
+  <p class="report-meta">Week of August 17, 2026 · 6 calls reviewed</p>
 
   <p class="section-label">Insights</p>
   <div class="insight-item">
     <span class="badge badge-competitor">Competitor</span>
-    <span class="insight-text">Twilio (SMS/OTP) and Brevo (email) are incumbent tools OneSignal is being evaluated against</span>
+    <span class="insight-text">Tienda Inglesa stayed with Salesforce, citing near-zero marginal cost vs OneSignal pricing</span>
   </div>
   <div class="insight-item">
     <span class="badge badge-objection">Objection</span>
-    <span class="insight-text">Enterprise vendor-homologation and Central Bank approval can take up to a year before go-live</span>
+    <span class="insight-text">Bennu is canceling due to Brazil's 2027 tax reform forcing broad cost-cutting across tools</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-competitor">Competitor</span>
+    <span class="insight-text">Creditel's sister company already approved competitor Casto Merayot for group standardization</span>
   </div>
   <div class="insight-item">
     <span class="badge badge-usecase">Use Case</span>
-    <span class="insight-text">Fintech leads want journeys for loan reminders, KYC re-engagement, and tag-based segmentation</span>
+    <span class="insight-text">MultiMoney wants pushes triggered by HubSpot workflows to drive loan/savings onboarding</span>
   </div>
   <div class="insight-item">
     <span class="badge badge-doubt">Doubt</span>
-    <span class="insight-text">Leads repeatedly confuse tags vs. events and are unsure which to use for segmentation</span>
-  </div>
-  <div class="insight-item">
-    <span class="badge badge-doubt">Doubt</span>
-    <span class="insight-text">Enterprise buyers ask about IP whitelisting and SSO (Azure Entra ID) before approving OneSignal</span>
+    <span class="insight-text">Creditel needs SSO via Entra ID and IP whitelisting, only available in higher-tier plans</span>
   </div>
 
   <hr class="divider">
@@ -61,23 +62,23 @@
   <p class="section-label">Opportunities & Learnings</p>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Compliance questions like SSO and IP whitelisting tend to surface late in enterprise conversations</span>
+    <span class="opp-text">Pricing objections surface late; earlier tiered/downgrade options could improve close rates</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Pricing and usage numbers are often estimated live on calls instead of prepared beforehand</span>
+    <span class="opp-text">Enterprise compliance needs (SSO, IP whitelist, approvals) often surface only late in the call</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Tag vs. event terminology confuses leads repeatedly and needs a clearer standard explanation</span>
+    <span class="opp-text">Reps spend notable time on Bildung's background story, leaving less time for client discovery</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Demo environments sometimes hit account limits (e.g. segment caps) mid-demo, causing friction</span>
+    <span class="opp-text">Lost or at-risk deals often close without a firm follow-up date or next-step commitment</span>
   </div>
   <div class="opp-item">
     <div class="opp-dot"></div>
-    <span class="opp-text">Long generic product walkthroughs can delay addressing the client's specific questions</span>
+    <span class="opp-text">When a prospect already has a group-wide competitor license, no switching-cost counter was raised</span>
   </div>
 
   <hr class="divider">
@@ -85,19 +86,15 @@
   <p class="section-label">Product Gaps</p>
   <div class="opp-item">
     <div class="gap-dot"></div>
-    <span class="opp-text">No IP whitelisting or SSO (e.g. Azure Entra ID) support for account access; API-key auth only</span>
+    <span class="opp-text">No native WhatsApp channel, requires webhook workarounds <span class="gap-account">· Inner Circle, Solemti</span></span>
   </div>
   <div class="opp-item">
     <div class="gap-dot"></div>
-    <span class="opp-text">No native WhatsApp channel; requires webhooks and the Meta API</span>
+    <span class="opp-text">No IP allowlist/whitelisting to restrict account access by fixed IP <span class="gap-account">· Creditel</span></span>
   </div>
   <div class="opp-item">
     <div class="gap-dot"></div>
-    <span class="opp-text">No standalone WhatsApp send type; must create then disable a Journey for one-off sends</span>
-  </div>
-  <div class="opp-item">
-    <div class="gap-dot"></div>
-    <span class="opp-text">Date-type event properties require manual string-to-Unix-timestamp conversion for integration</span>
+    <span class="opp-text">No built-in data lake / BI-level analytics platform <span class="gap-account">· Inner Circle</span></span>
   </div>
 </div>
 </body>
