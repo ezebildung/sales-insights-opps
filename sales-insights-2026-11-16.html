@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Insights - Week 2026-11-16</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
+  .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; border: 0.5px solid #e0ded6; padding: 2rem 2.5rem; }
+  .report-title { font-size: 22px; font-weight: 500; margin-bottom: 4px; }
+  .report-meta { font-size: 13px; color: #888780; margin-bottom: 2rem; }
+  .divider { border: none; border-top: 0.5px solid #e0ded6; margin: 1.75rem 0; }
+  .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #b4b2a9; margin-bottom: 12px; }
+  .insight-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
+  .insight-item:last-child { border-bottom: none; }
+  .badge { font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
+  .badge-competitor { background: #FAECE7; color: #993C1D; }
+  .badge-objection { background: #FCEBEB; color: #A32D2D; }
+  .badge-usecase { background: #E1F5EE; color: #0F6E56; }
+  .badge-doubt { background: #E6F1FB; color: #185FA5; }
+  .badge-other { background: #F1EFE8; color: #5F5E5A; }
+  .badge-gap { background: #FAEEDA; color: #854F0B; }
+  .insight-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+  .opp-item { display: flex; gap: 10px; padding: 12px 0; border-bottom: 0.5px solid #f1efe8; align-items: flex-start; }
+  .opp-item:last-child { border-bottom: none; }
+  .opp-dot { width: 6px; height: 6px; border-radius: 50%; background: #7F77DD; flex-shrink: 0; margin-top: 7px; }
+  .gap-dot { width: 6px; height: 6px; border-radius: 50%; background: #EF9F27; flex-shrink: 0; margin-top: 7px; }
+  .opp-text { font-size: 14px; line-height: 1.6; color: #1a1a18; }
+  .gap-account { color: #b4b2a9; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="report-title">Sales Insights</p>
+  <p class="report-meta">Week of 2026-11-16 · 3 calls reviewed</p>
+
+  <p class="section-label">Insights</p>
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Comfandi: marketing stopped using OneSignal after a 5,000-user CSV reached only ~2,000</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-usecase">Use Case</span>
+    <span class="insight-text">Comfandi: re-adopt push + in-app to lift engagement with its digital services</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-doubt">Doubt</span>
+    <span class="insight-text">Comfandi: are data tags limited, and does the license include a CSM for onboarding?</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-objection">Objection</span>
+    <span class="insight-text">Mobybots: $9k Mixpanel implementation felt above budget; asked to finish in ~6 weeks</span>
+  </div>
+  <div class="insight-item">
+    <span class="badge badge-other">Other</span>
+    <span class="insight-text">Comfandi may have shifted messaging to SMS; validating usage with internal teams next week</span>
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Opportunities &amp; Learnings</p>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Know plan limits (tags, segments) cold; avoid answering then correcting mid-call</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Refresh expired quotes before follow-ups so pricing can be discussed live</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Use a standard checklist for CSV-vs-reach gaps: subscription, external ID, tags</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Ask early what tool replaced OneSignal usage (e.g. SMS) to surface competition</span>
+  </div>
+  <div class="opp-item">
+    <div class="opp-dot"></div>
+    <span class="opp-text">Tie services price to business outcomes before revealing it, and confirm budget</span>
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Product Gaps</p>
+  <div class="opp-item">
+    <div class="gap-dot"></div>
+    <span class="opp-text">CSV segment uploads leave per-campaign tags on users that had to be cleared one by one before re-targeting <span class="gap-account">· Comfandi</span></span>
+  </div>
+</div>
+</body>
+</html>
